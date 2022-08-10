@@ -1,0 +1,293 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	background: #E5E5E5;
+}
+
+.icono {
+	width: 31.09px;
+	height: 48px;
+	margin:  40px 0px 20px 85px;
+	display: block;
+}
+
+.contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+main {
+	margin-right: 0px;
+	width: 100%;
+	margin-left: 200px;
+}
+
+main textarea {
+	font-family: Inter, sans-serif;
+	font-size: 32px;
+	color: #0A3871;
+	background: #E5E5E5;
+	width: inherit;
+	height: 600px;
+	margin-top: 100px;
+	border: none;
+	resize: none;
+}
+
+main textarea::placeholder {
+	color: #0A3871;
+}
+
+main textarea:focus {
+	outline: none;
+}
+
+main .aviso {
+	margin:  20px 0px;
+}
+
+main .aviso img {
+	vertical-align: middle;
+}
+
+main .aviso p {
+	width: 50%;
+	font-size: 12px;
+	display: inline;
+	color: #495057;
+}
+
+main .botones {
+	width: 100%;
+}
+
+main button {
+	font-family: Inter, sans-serif;
+	padding: 24px;
+	width: 315px;
+	height: 67px;
+	margin-right: 10px;
+	border-radius: 25px;
+
+}
+
+main button:hover {
+	cursor: pointer;
+}
+
+main .btn-encriptar {
+	background: #0A3871;
+	color: #fff;
+	border: 1px solid #0A3871;
+}
+
+main .btn-encriptar:hover {
+	background: #0A2860;
+}
+
+main .btn-desencriptar {
+	color: #0A3871;
+	border: 1px solid #0A3871;
+}
+
+main .btn-desencriptar:hover {
+	background: #b8c0ff;
+}
+
+section {
+	background: #fff;
+	max-width: 370px;
+	width: 100%;
+	height: 944px;
+	margin: -60px 20px 50px 50px;
+	border-radius: 32px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+/* -------------ANTES DE ENCRIPTAR----------------- */
+
+
+section .contenido {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section .texto-grande {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px 20px;
+}
+
+section .texto-chico {
+	font-size: 16px;
+	color: #495057;
+	margin: 0px 20px;
+}
+
+
+
+/* -------------DESPUES DE ENCRIPTAR--------------- */
+
+section textarea {
+	font-family: Inter, sans-serif;
+	font-size: 20px;
+	color: #495057;
+	background: #fff;
+	height: 781px;
+	margin: 32px 0px 20px 0px;
+	width: 90%;
+	border: none;
+	resize: none;
+	word-wrap: break-word;
+}
+
+section textarea:focus {
+	outline: none;
+}
+
+section button {
+	font-family: Inter, sans-serif;
+	padding: 24px;
+	width: 90%;
+	height: 67px;
+	border-radius: 25px;
+	display: block;
+	color: #0A3871;
+	margin: auto;
+	border: 1px solid #0A3871;
+}
+
+section button:hover {
+	background: #b8c0ff;
+	cursor: pointer;
+}
+
+/* -------------CLASES OCULTAR/MOSTRAR--------------- */
+
+section .ocultar {
+	display: none;
+}
+
+.mostrar {
+	visibility: visible;
+}
+
+/* -------------DISEÑO RESPONSIVO--------------- */
+
+@media screen and (max-width: 1300px) {
+
+	main {
+		margin-left: 85px;
+	}
+
+	main button {
+		width: 270px;
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+
+
+	.icono {
+		margin-left: 40px;
+	}
+
+	.contenedor {
+		display: block;
+		margin: 0px 40px;
+	}
+
+	main {
+		margin-left: 0px;
+		width: inherit;
+	}
+
+	main textarea {
+		width: 100%;
+	}
+
+	main .botones {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	main button {
+		width: 48%;
+		margin: 0px;
+	}
+
+	section {
+		height: auto;
+		margin: 50px 0px;
+		padding: 20px 0px;
+		border-radius: 0px;
+		max-width: none;
+	}
+
+	section .contenido img {
+		display: none;
+	}
+
+	section textarea {
+		height: 200px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	main .btn-encriptar:hover {
+		background: #0A3871;
+	}	
+
+	main .btn-desencriptar:hover {
+		background: #fff;
+	}
+
+	section button:hover {
+		background: #fff;
+	}
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+	.icono {
+		margin-left: 16px;
+	}
+
+	.contenedor {
+		margin: 0px 16px;
+	}
+
+	main textarea {
+		height: 300px;
+		margin-top: 80px;
+	}
+
+	main .botones {
+		display: block;
+	}
+
+	main button {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	section {
+		margin: 30px 0px;
+	}
+
+}
